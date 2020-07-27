@@ -3,13 +3,13 @@ package com.hencoder.hencoderpracticedraw2.sample;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RadialGradient;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 public class Sample02RadialGradientView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);

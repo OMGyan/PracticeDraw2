@@ -9,11 +9,12 @@ import android.graphics.ComposeShader;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
 import com.hencoder.hencoderpracticedraw2.R;
+
+import androidx.annotation.Nullable;
 
 public class Sample05ComposeShaderView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
