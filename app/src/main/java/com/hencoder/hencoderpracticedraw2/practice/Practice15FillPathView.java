@@ -45,12 +45,11 @@ public class Practice15FillPathView extends View {
         super.onDraw(canvas);
 
         // 使用 Paint.getFillPath() 获取实际绘制的 Path
-
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setStrokeWidth(0);
         // 第一处：获取 Path
         canvas.drawPath(path, paint);
-
+        paint.getFillPath(path,path1);
         canvas.save();
         canvas.translate(500, 0);
         canvas.drawPath(path1, pathPaint);
@@ -63,6 +62,7 @@ public class Practice15FillPathView extends View {
         canvas.drawPath(path, paint);
         canvas.restore();
 
+        paint.getFillPath(path,path2);
         canvas.save();
         canvas.translate(500, 200);
         canvas.drawPath(path2, pathPaint);
@@ -75,6 +75,7 @@ public class Practice15FillPathView extends View {
         canvas.drawPath(path, paint);
         canvas.restore();
 
+        paint.getFillPath(path,path3);
         canvas.save();
         canvas.translate(500, 400);
         canvas.drawPath(path3, pathPaint);
