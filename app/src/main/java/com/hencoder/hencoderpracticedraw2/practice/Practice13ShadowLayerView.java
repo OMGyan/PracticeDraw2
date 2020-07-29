@@ -37,9 +37,8 @@ public class Practice13ShadowLayerView extends View {
         super.onDraw(canvas);
 
         paint.setTextSize(100);
-        paint.setFakeBoldText(true);
-
-        canvas.drawText("I Love You.Sweetheart.", 45, 200, paint);
+        paint.setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Satisfy-Regular.ttf"));
+        canvas.drawText("I Love You.Sweetheart.", 100, 200, paint);
 
         Path path = new Path();
         path.arcTo(new RectF(330, 330, 530, 530),-225,225);
@@ -47,8 +46,7 @@ public class Practice13ShadowLayerView extends View {
         path.lineTo(530,672);
         path.close();
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setStrokeWidth(10);
-        paint.setStyle(Paint.Style.STROKE);
+
         paint.setColor(Color.RED);
         canvas.drawPath(path,paint);
 
